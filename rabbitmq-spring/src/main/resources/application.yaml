@@ -1,0 +1,12 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: 123456
+    # 交换机确认
+    publisher-confirm-type: correlated
+    # 回退消息
+    publisher-returns: true
+server:
+  port: 8080
